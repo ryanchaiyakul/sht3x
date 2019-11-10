@@ -10,7 +10,7 @@ setuptools.setup(
     description="Sht3x python driver for stickytoe framework",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/ryanchaiyakul/WiPi",
+    url="https://github.com/ryanchaiyakul/sht3x",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -18,5 +18,7 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.6',
-    include_package_data=True,
+    install_requires=['smbus2 == 0.3.0',
+                      'stickytoe-device == 0.0.1',
+                      ],
 )
