@@ -20,7 +20,7 @@ class SHT3x(stickytoe_device.I2C):
                 # SHT30 address, 0x44(68)
                 # Read data back from 0x00(00), 6 bytes
                 # cTemp MSB, cTemp LSB, cTemp CRC, Humididty MSB, Humidity LSB, Humidity CRC
-                data = self.smbus.read_i2c_block_data(0x44, 0x00, 6)
+                data = self.smbus.read_i2c_block_data(self.addr, 0x00, 6)
 
                 # Convert the data
                 
