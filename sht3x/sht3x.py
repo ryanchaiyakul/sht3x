@@ -4,7 +4,7 @@ import smbus2
 import json
 
 
-class SHT3x(stickytoe_device.I2C):
+class SHT3x(stickytoe_device.DEVICE.I2C):
 
         def __init__(self, config: dict):
                 super().__init__(config)
